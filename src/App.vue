@@ -1,7 +1,7 @@
 <template>
 	<div class="container">
-		<header>
-			<nav class="navbar navbar-dark">
+		<header class="d-block">
+			<nav class="navbar navbar-dark text-dark">
 				<a class="navbar-brand" href="/">Avengers</a>
 				<button
 					class="navbar-toggler"
@@ -27,10 +27,10 @@
 			</nav>
 		</header>
 		<main>
-      <router-view/>
-    </main>
-		<footer>
-      <p>&copy; 2020 Avengers</p>
-    </footer>
+			<router-view />
+		</main>
+		<footer class="footer mt-4">
+			<p>&copy; 2020 Avengers</p>
+		</footer>
 	</div>
 </template>

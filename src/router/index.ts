@@ -26,7 +26,16 @@ const routes: Array<RouteRecordRaw> = [
     name: "Powers & Weaknesses",
     component: () =>
       import("../views/Powers.vue")
-  }
+  },
+	{
+		name: "404",
+		path: "/:pathMatch(.*)*",
+		component: () => import("../views/Unfound.vue"),
+		meta: {
+			title: "Page Not Found",
+			sidebar: false,
+		},
+	},
 ];
 
 const router = createRouter({
