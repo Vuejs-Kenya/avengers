@@ -1,40 +1,49 @@
 <template>
 	<div class="container">
-		<div class="card">
-			<div class="card-header">
-				Add Avenger
-			</div>
-			<div class="card-body">
-				<form class="form">
-					<div class="form-group">
-						<label>Given Name</label>
-						<input class="form-control" type="text" />
+		<div class="row">
+			<div class="col-md-8">
+				<div class="card mb-4">
+					<div class="card-header">
+						All Avengers
 					</div>
-				</form>
+					<div class="card-body">
+						<table class="table">
+							<thead>
+								<th>Name</th>
+								<th>Username</th>
+							</thead>
+							<tbody>
+								<tr v-for="a in avengers.data" :key="a.id">
+									<td>
+										{{ a.name }}
+									</td>
+									<td>
+										{{ a.username }}
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<div class="card mt-4">
-			<div class="card-header">
-				All Avengers
-			</div>
-			<div class="card-body">
-				<table class="table">
-					<thead>
-						<th>Name</th>
-						<th>Username</th>
-					</thead>
-					<tbody>
-						<tr v-for="a in avengers.data" :key="a.id">
-							<td>
-								{{ a.name }}
-							</td>
-							<td>
-								{{ a.username }}
-							</td>
-						</tr>
-					</tbody>
-				</table>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-header">
+						Add Avenger
+					</div>
+					<div class="card-body">
+						<form class="form">
+							<div class="form-group">
+								<label>Given Name</label>
+								<input class="form-control" type="text" />
+							</div>
+							<div class="form-group">
+                                <button class="btn btn-dark btn-block">Save Details</button>
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
