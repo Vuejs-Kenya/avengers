@@ -1,10 +1,12 @@
 <template>
 	<header class="d-block mb-4">
 		<nav
-			class="navbar navbar-expand-md navbar-dark bg-dark"
+			class="navbar navbar-expand-md navbar-light bg-light"
 		>
 			<div class="container">
-        <a class="navbar-brand" href="/">Avengers</a>
+        <a class="navbar-brand" href="/">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/02/Marvel%27s_Avengers_2019_logo.png" width ="100px" />
+        </a>
 			<button
 				class="navbar-toggler"
 				data-toggle="collapse"
