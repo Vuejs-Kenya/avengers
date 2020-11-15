@@ -10,32 +10,29 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/team",
     name: "The Team",
-    component: () =>
-      import("../views/Team.vue"),
-      children: [
-        {
-          path: ":id",
-          name: "View Avenger",
-          component: () =>
-            import("../views/Avenger.vue")
-        }
-      ]
+    component: () => import("../views/Team.vue"),
+    children: [
+      {
+        path: ":id",
+        name: "View Avenger",
+        component: () => import("../views/Avenger.vue")
+      }
+    ]
   },
   {
     path: "/powers",
     name: "Powers & Weaknesses",
-    component: () =>
-      import("../views/Powers.vue")
+    component: () => import("../views/Powers.vue")
   },
-	{
-		name: "404",
-		path: "/:pathMatch(.*)*",
-		component: () => import("../views/Unfound.vue"),
-		meta: {
-			title: "Page Not Found",
-			sidebar: false,
-		},
-	},
+  {
+    name: "404",
+    path: "/:pathMatch(.*)*",
+    component: () => import("../views/Unfound.vue"),
+    meta: {
+      title: "Page Not Found",
+      sidebar: false
+    }
+  }
 ];
 
 const router = createRouter({
