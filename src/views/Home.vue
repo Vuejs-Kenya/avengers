@@ -2,7 +2,7 @@
 	<div class="container text-center">
 		<img
 			alt="Vue logo"
-			src="https://1000logos.net/wp-content/uploads/2019/05/Avengers-logo.png"
+			src="https://www.pinclipart.com/picdir/big/202-2027585_avengers-logo-white-png-clipart.png"
       class="home-logo"
 		/>
 	</div>

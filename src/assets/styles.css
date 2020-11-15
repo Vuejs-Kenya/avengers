@@ -7,5 +7,9 @@
 }
 
 .home-logo {
-    width: 100%;
+    width: 50%;
+}
+
+.avatar {
+    width: 40px;
 }
