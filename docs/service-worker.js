@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.496d22870550b3ba839611b7a6d8e93b.js"
+  "/avengers/precache-manifest.7e0d464e3fc141d3675d9ab6ed4fbaff.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "avengers"});
