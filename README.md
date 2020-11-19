@@ -1,7 +1,10 @@
 # Avengers
 This is a sample Vue3 Web Application.
-API Host: [Heroku](https://vueavengers.herokuapp.com)
-API Git Repo: [Laravel Code](https://github.com/osenco/vueavengers)
+### API Host: 
+[Heroku](https://vueavengers.herokuapp.com)
+
+### API Git Repo: 
+[Laravel Code](https://github.com/osenco/avengers-api)
 
 ## Project setup
 ```
