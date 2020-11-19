@@ -7,8 +7,8 @@ import VueAxios from "vue-axios";
 import http from "./services/http";
 
 import "bootstrap";
-import "bootstrap/dist/css/bootstrap.css";
 import "./assets/styles.css";
+import "bootstrap/dist/css/bootstrap.css";
 
 import Pagination from "./components/Pagination.vue";
 
